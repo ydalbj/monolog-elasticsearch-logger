@@ -10,19 +10,8 @@ monolog-es-logger是基于laravel的monolog日志Elasticsearch存储通道
 
 ## 使用
 
-1. 指定私有仓库地址
+1. 固定monolog版本
 
-    * 修改composer.json文件,增加以下内容:
-    ```json
-        "repositories" : [
-            {
-                "type" : "git",
-                "url" : "https://gitlab.geekli.cn/wbt/monolog-es-logger.git"
-            }
-        ],
-    ```
-
-    * 固定monolog版本
     
     > 因monolog版本1.24存在无法写入Elasticsearch的问题，所以要在项目composer.json中固定monolog版本
     ```json
@@ -32,7 +21,7 @@ monolog-es-logger是基于laravel的monolog日志Elasticsearch存储通道
 2. 引入类库
 
     ```shell
-    $ composer require wobatu/logger
+    $ composer require ydalbj/monolog-elasticsearch-logger
     ```
 
 3. 修改日志配置
