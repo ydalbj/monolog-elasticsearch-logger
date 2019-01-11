@@ -1,0 +1,15 @@
+{
+    "name": "ydalbj/monolog-elasticsearch-logger",
+    "description": "基于laravel的monolog日志Elasticsearch存储通道",
+    "type": "library",
+    "require": {
+        "ruflin/elastica": "^6.0",
+        "monolog/monolog": "1.23"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": { "Ydalbj\\Logger\\": "src/" }
+    }
+}
